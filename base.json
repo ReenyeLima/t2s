@@ -1,0 +1,39 @@
+{
+	"Connection" : {
+		"Headers" : {
+			"Content-type" : "application/json; charset=UTF-8",
+			"Access-Control-Allow-Origin" : "http://localhost/",
+			"Access-Control-Allow-Methods" : "GET, PUT, POST, DELETE"
+		}
+	},
+	"Database" : {
+		"host" : "localhost",
+		"port" : "3306",
+		"dbname" : "t2s",
+		"user" : "root",
+		"password" : ""
+	},
+	"Class" : [
+		{
+			"name" : "conteiner",
+			"attributes" : [
+				"id",
+				"id_cliente",
+				"conteiner",
+				"tipo",
+				"status",
+				"categoria"
+			]
+		},
+		{
+			"name" : "movimentacoes",
+			"attributes" : [
+				"id",
+				"id_conteiner",
+				"tipo",
+				"inicio",
+				"fim"
+			]
+		}
+	]
+}
